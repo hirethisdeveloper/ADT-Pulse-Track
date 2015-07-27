@@ -1,6 +1,6 @@
 # ADT Pulse Track
 
-ADT Pulse Track is a general purpose utility used to connect to an IMAP enabled email account that is set up to
+ADT Pulse Track is a general purpose NodeJS utility used to connect to an IMAP enabled email account that is set up to
 receive ADT Pulse alerts which then parses each alert and inserts it into a mysql database table. This can be used as
 a stepping stone for home automation and logging.
 
