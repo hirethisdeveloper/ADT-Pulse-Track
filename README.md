@@ -46,15 +46,18 @@ are set to check a GMail account.
 
 Simply type the command:
 
+```
 node app.js
+```
 
 This will execute the application, check the email account, add new entries into the database, delete processed emails,
 and exit. Should you want to execute this on a schedule using something as simple as crontab is possible:
 
+```
 crontab -e
 
 * * * * * <PATH TO NODE>/node <PATH TO APP>/app.js
-
+```
 
 ## Contributing
 
