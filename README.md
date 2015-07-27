@@ -14,6 +14,7 @@ email address sent to the configured "to" email address.
 5. Rename the file "Sample_hsa.cfg" to hsa.cfg and fill in the appropriate fields. See below for a description of the
 file.
 6. Import "database.sql" into your database to create the application's data table.
+7. Edit the file ./utils/database.js, fill out your database connection settings.
 
 ## Configuration File Format
 
