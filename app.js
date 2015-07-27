@@ -44,9 +44,9 @@ utils.config(function (config) {
                         else {
                             utils.dbg("message already seen")
                         }
-                        /*imap.setFlags(messageAttributes.uid, "\\Deleted", function (err) {
+                        imap.setFlags(messageAttributes.uid, "\\Deleted", function (err) {
                             if (err) utils.dbg("Error setting flag: %s", err);
-                        });*/
+                        });
                     });
                 });
                 f.once('error', function (err) {
