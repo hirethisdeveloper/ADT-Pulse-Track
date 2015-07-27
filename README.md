@@ -13,6 +13,7 @@ a stepping stone for home automation and logging.
 email address sent to the configured "to" email address.
 5. Rename the file "Sample_hsa.cfg" to hsa.cfg and fill in the appropriate fields. See below for a description of the
 file.
+6. Import "database.sql" into your database to create the application's data table.
 
 ## Configuration File Format
 
@@ -28,13 +29,15 @@ file.
     }
 }
 
-*from* - This is the address to expect emails to come from. The address listed in the sample file is a known sender
+**from** - This is the address to expect emails to come from. The address listed in the sample file is a known sender
 address from ADT. However if you notice emails coming in from ADT Pulse from another address for alerts, use that
 address here.
-*to* - This is the email address that the app should confirm in checking the account for email alerts that the email is
+
+**to** - This is the email address that the app should confirm in checking the account for email alerts that the email is
 directed TO this address. It's a double verification check, "from" and "to" just in case this is a shared or general
 email account. Typically this would be set to the same email address you're checking email on.
-*imap* - The settings in this sub section define your email IMAP account information. The default provided settings
+
+**imap** - The settings in this sub section define your email IMAP account information. The default provided settings
 are set to check a GMail account.
 
 ## Usage
