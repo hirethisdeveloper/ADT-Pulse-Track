@@ -17,6 +17,7 @@ file.
 
 ## Configuration File Format
 
+```javascript
 {
    "from": "Alerts@ADTPulse.com",
    "to"  : "",
@@ -28,6 +29,7 @@ file.
         "tls": 1
     }
 }
+```
 
 **from** - This is the address to expect emails to come from. The address listed in the sample file is a known sender
 address from ADT. However if you notice emails coming in from ADT Pulse from another address for alerts, use that
