@@ -4,8 +4,8 @@ var mysql = require('mysql'),
 var settings = {
     user    : '',
     password: '',
-    database: 'HSAAPP',
-    host    : ""
+    database: '',
+    host    : ''
 };
 
 exports.db = mysql.createConnection(settings);
