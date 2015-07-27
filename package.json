@@ -1,0 +1,17 @@
+{
+  "name": "ADTPULSETRACK",
+  "version": "0.0.1",
+  "dependencies": {
+    "fs": "0.0.2",
+    "imap": "0.8.15",
+    "mysql": "^2.6.2",
+    "string": "^3.3.0"
+  },
+  "repository": {},
+  "devDependencies": {
+    "util": "0.10.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
