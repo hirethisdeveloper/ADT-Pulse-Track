@@ -68,6 +68,11 @@ crontab -e
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+Bugs
+
+If you encounter any bugs, please create an issue on [Github](https://github.com/hirethisdeveloper/ADT-Pulse-Track/issues).
+
+
 ## License
 
 The MIT License (MIT)
