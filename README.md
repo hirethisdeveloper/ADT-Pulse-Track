@@ -11,8 +11,8 @@ a stepping stone for home automation and logging.
 3. Run "npm install" to install all required NodeJS modules.
 4. Set up, or gather your IMAP enabled email account information. The app processes emails from the configured "from"
 email address sent to the configured "to" email address.
-5. Rename the file "Sample_hsa.cfg" to hsa.cfg and fill in the appropriate fields. See below for a description of the
-file.
+5. Rename the file "Sample_hsa.cfg" to hsa.cfg, place it in the user's home folder in which it will be run and fill in
+the appropriate fields. See below for a description of the file.
 6. Import "database.sql" into your database to create the application's data table.
 7. Edit the file ./utils/database.js, fill out your database connection settings.
 
