@@ -11,7 +11,7 @@ exports.dbg       = function (str) {
     if (dbgVar == "true") console.log(str);
 };
 exports.config    = function (callback) {
-    var configFile = "../hsa.cfg";
+    var configFile = process.env.HOME + "/hsa.cfg";
     fs.readFile(configFile, 'utf8', function (fserr, data) {
         if (fserr) throw fserr;
         try {
