@@ -77,6 +77,3 @@ utils.config(function (config) {
     });
     imap.connect();
 });
-Date.prototype.toMysqlFormat = function () {
-    return this.getUTCFullYear() + "-" + utils.twoDigits(1 + this.getUTCMonth()) + "-" + utils.twoDigits(this.getUTCDate()) + " " + utils.twoDigits(this.getUTCHours()) + ":" + utils.twoDigits(this.getUTCMinutes()) + ":" + utils.twoDigits(this.getUTCSeconds());
-};

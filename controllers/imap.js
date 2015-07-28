@@ -5,7 +5,7 @@ var string  = require('string'),
 //---------------------------------------------------------------
 exports.processMessage = function (cfg, message, messageAttributes) {
     var lines       = string(message).lines(),
-        msgDate     = new Date(messageAttributes.date).toMysqlFormat(),
+        msgDate     = messageAttributes.date,
         bodyLine    = string(lines[1]).collapseWhitespace().s,
         fromLine    = lines[3],
         toLine      = lines[4],
