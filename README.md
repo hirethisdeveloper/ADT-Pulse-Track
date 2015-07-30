@@ -52,12 +52,14 @@ node app.js
 ```
 
 This will execute the application, check the email account, add new entries into the database, delete processed emails,
-and exit. Should you want to execute this on a schedule using something as simple as crontab is possible:
+and exit. The app is configured by default to loop and recheck every ten seconds.
+
+## Debugging
+
+Debugging messages can be turned on by setting a shell variable:
 
 ```
-crontab -e
-
-* * * * * <PATH TO NODE>/node <PATH TO APP>/app.js
+export DBG="true"
 ```
 
 ## Contributing
