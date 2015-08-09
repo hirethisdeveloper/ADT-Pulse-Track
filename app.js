@@ -1,3 +1,6 @@
+var pmx = require('pmx');
+var probe = pmx.probe();
+
 var Imap      = require('imap'),
     fs        = require('fs'),
     db_imap   = require("./models/imap.js"),
@@ -6,6 +9,11 @@ var Imap      = require('imap'),
     utils     = require("./utils/utils.js"),
     dbgVar    = process.env.DBG,
     debugging = (dbgVar == "true") ? true : false;
+
+var counter = probe.counter({
+    name : 'New Alerts'
+});
+
 utils.config(function (config) {
     var imap    = new Imap(config.imap);
     var timeout;
@@ -47,7 +55,10 @@ utils.config(function (config) {
                             for (var item in flags) {
                                 if (flags[item].match(/Seen/)) seen = true;
                             }
-                            if (!seen) imapCtrl.processMessage(config, message, messageAttributes);
+                            if (!seen) {
+                                imapCtrl.processMessage(config, message, messageAttributes);
+                                counter.inc();
+                            }
                             else {
                                 utils.dbg("message already seen")
                             }
